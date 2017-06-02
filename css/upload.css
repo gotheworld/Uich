@@ -1,0 +1,92 @@
+.u-type-text{
+	padding: 5px 0px;
+	line-height: 40px;
+	text-align: center;
+	
+}
+
+.u-imgtype-btn-f{
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	height: 30px;
+	padding: 0px 20px;
+	background-color: #fff;
+	
+}
+.u-typebtn2{
+	margin-left: -45px;
+}
+.u-typebtn2 span{
+}
+.u-typebtn4{
+	margin-left: -70px;
+}
+.u-typebtn4 span{
+	width: 100px;
+}
+.u-typebtn5{
+	margin-left: -80px;
+}
+.u-typebtn5 span{
+	width: 120px;
+}
+.u-imgtype-btn{
+	display: block;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	border-radius:5px;
+	padding: 0px 10px;
+	background-color: #FE9426;
+}
+.u-type{
+	height: 40px;
+}
+.u-type:after{
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top:15px;
+	right: 0;
+	height: 1px;
+	content: " ";
+	transform: scaleY(.5);
+	background-color: #e0dede;
+}
+.pic-ul{
+	width: 100%;
+}
+.pic-ul li{
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+.picture li{
+	
+}
+.picture li img{
+	width: 100%;
+	width: 100%;
+}
+.more{
+	
+}
+.more-btn{
+	border-radius: 0px;
+	width: 50px;
+	height: 50px;
+	background-size: 32px;
+	background-image: url(../images/more-btn.png);
+}
+.img-btn{
+	color: #9A9A9A;
+	border-radius: 0px;
+	width: 50px;
+	height: 50px;
+}
+.notice{
+	padding-left: 10px;
+	color: #9A9A9A;
+	font-size: 14px ;
+}

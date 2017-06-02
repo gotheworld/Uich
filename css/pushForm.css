@@ -1,0 +1,65 @@
+.form-h1{
+	color: #9A9A9A;
+}
+.margin5px{
+}
+.p-table{
+	text-align: left;
+	background: #fff;
+}
+
+.p-table th{
+	font-weight: 300;
+	padding: 0px 5px;
+	width: 30%;
+}
+.p-table td{
+	color: #9A9A9A;
+	width: 70%;
+}
+.p-table tr{
+	padding: 0px 5px;
+	line-height: 40px;
+	border-top:1px #efeff4 solid ;
+}
+.p-table thead{
+	line-height: 35px;
+}
+.p-type{
+	text-align: center;
+	line-height: 35px;
+	
+}
+.p-table input{
+	padding: 0px 0px;
+	width: 100%;
+	margin: 0px;
+	border-color: #fff;
+	border-bottom-color: #9A9A9A;
+	height: 40px;
+}
+.company{
+	display:none;
+}
+.personal{
+	display: none;
+}
+.p-icon{
+	height: 45px;
+	width: 25px;
+	background-size: 18px;
+}
+.more-icon{
+	background-image: url(../images/p-jiantou.png);
+}
+.push-btnx{
+	width: 49%;
+	float: left;
+}
+.push-btnq{
+	width: 49%;
+	float: right;
+}
+.loanCategory{
+	display: none;
+}

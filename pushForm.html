@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>推送申请表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/mui.picker.min.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pushForm.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="" class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<h1 class="mui-title">推送申请表</h1>
+		</header>
+
+		<div class="mui-content" style="padding-left: 10px;padding-right: 10px;">
+			<div class="form-h1 margin5px" style="margin-top: 5px;">申请表内容:</div>
+			<div class="p-type margin5px" >甲方</div>
+			<table class="mui-table p-table margin5px" border="0">
+				<tr class="personal"> 
+					<th>姓名</th>
+					<td id="financingUserName"></td>
+				</tr>
+				
+				<tr class="company">
+					<th>公司名称</th>
+					<td id="enterpriseName"></td>
+				</tr>
+				<tr class="company">
+					<th>机构代码</th>
+					<td id="enterpriseCode"></td>
+				</tr>
+				<tr class="company">
+					<th >法人代表</th>
+					<td id="legalPerson"></td>
+				</tr>
+				<tr class="personal">
+					<th id="certificateType"></th> 
+					<td id="certificateCode"></td>
+				</tr>
+				<tr>
+					<th>联系电话</th>
+					<td id="phone"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td id="email"></td>
+				</tr>
+				<tr>
+					<th>贷款金额</th>
+					<td><input style="width: 85%;" type="number" name="" id="money" value="" placeholder="请输入金额" /><span style="width: 15%;float: right;">(万)</span></td>
+				</tr>
+				<tr>
+					<th>还款期限</th>
+					<td ><span id="loanYear" style="85%"></span><span style="width: 15%;float: right;">(年)</span></td>
+				</tr>
+				<tr class="loanCategory">
+					<th>贷款类别</th>
+					<td id="loanCategory"></td>
+				</tr>
+				<tr>
+					<th>还款方式</th>
+					<td id="repayMode-div"><span id="repayMode" data=''>请选择</span><div class="p-icon more-icon mainBg mui-pull-right"></div></td>
+				</tr>
+				<tr>
+					<th>担保方式</th>
+					<td id="guaranteeMode-div"><span id="guaranteeMode" data=''>请选择</span><div class="p-icon more-icon mainBg mui-pull-right"></div></td>
+				</tr>
+				<tr class="personal">
+					<th>居住地址</th>
+					<td><input type="text" name="" id="address_p" value="" placeholder="请输入地址" /></td>
+				</tr>
+				<tr class="company">
+					<th>公司地址</th>
+					<td><input type="text" name="" id="address_c" value="" placeholder="请输入地址" /></td>
+				</tr>
+				<tr class="personal">
+					<th>邮政编码</th>
+					<td><input type="number" name="" id="postCode" value="" placeholder="邮政编码" /></td>
+				</tr>
+				<tr class="company">
+					<th>贷款用途</th>
+					<td><input type="text" name="" id="purpose" value="" placeholder="贷款用途" /></td>
+				</tr>
+			</table>
+			<div class="p-type margin5px" >乙方</div>
+			<table class="mui-table p-table margin5px" border="0" cellspacing="" cellpadding="">
+				<tr>
+					<th>银行名称</th>
+					<td id="partyB"></td>
+				</tr>
+			</table>
+			<div class="push" style="margin-top:10px;display: none;">
+				<button type="button" id='push-btn' class="mui-btn mui-btn-block my-btn-default my-btn-color1">推送申请表</button>
+			</div>
+			<div class="sure" style="margin-top:10px;display: none;">
+				<button type="button" id='change-btn' class="mui-btn mui-btn-block my-btn-default my-btn-color1 push-btnx">修改</button>
+				<button type="button" id='sure-btn' class="mui-btn mui-btn-block my-btn-default my-btn-color1 push-btnq">确认申请表</button>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pushForm.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,55 @@
+.my-ul{
+	margin: 0px 10px;
+}
+
+.my-cell-li{
+	margin-top: 20px;
+}
+.info-time{
+	padding-bottom: 5px;
+	font-size: 14px;
+	text-align: center;
+	color: #9A9A9A;
+	background-color: #EFEFF4;
+}
+.info-lis{
+	background-color: #fff;
+	height: 40px;
+	position: relative;
+	line-height: 40px;
+}
+.info-li-left{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left:0px ;
+}
+.info-li-left-icon-1{
+	background-image: url(../images/d-head.png);
+	background-size: 25px;
+}
+.info-li-left-icon-2{
+	background-image: url(../images/info-time.png);
+	background-size: 25px;
+}
+.info-li-left-icon-3{
+	background-image: url(../images/beizhu.png);
+	background-size: 25px;
+}
+.info-li-right-text{
+	
+}
+.info-li-right{
+	display: block;
+	position: absolute;
+	right:5px ;
+}
+.radu-first{ 
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+}
+.radu-end{
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius:6px;
+}

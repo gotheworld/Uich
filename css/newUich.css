@@ -1,0 +1,80 @@
+.new_div{
+	margin: 20px;
+	background: #fff;
+	border-radius: 10px;
+}
+.new-clearAll{
+	color: #fff;
+	font-size: 16px !important;
+	line-height: 44px;
+}
+.new_title{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: center;
+	background-color: #FF7407;
+	color: #fff;
+}
+.new-text{
+	line-height: 40px;
+}
+.new_cont{
+	height: 40px;
+}
+.new-l{
+	position: absolute;
+	left: 10px;
+}
+.new-r{
+	position: absolute;
+	right: 10px;
+}
+.new-small{
+	color: #9A9A9A;
+}
+
+.new-more{
+	position: absolute;
+	right: 10px;
+}
+.rush-btn-div{
+	text-align: center;
+}
+.rush-btn{
+	background-color: #FF7407;
+	color: #fff;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+.new-flag{
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	background-image: url(../images/new-icon.png);
+	left: 50%;
+	margin-left: -32px;
+	bottom: -15px;
+}
+.newUich{
+	
+}
+.close-icon{
+	display: block;
+	width: 44px;
+	height: 44px;
+	background-color: #1cafb7;
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-image: url(../images/close.png);
+}
+.close_icon{
+	position: absolute;
+	right: -10px;
+    top: -10px;
+	width: 32px;
+	height: 32px;
+	background-size: 32px;
+	background-image: url(../images/close-1.png);
+}

@@ -1,0 +1,69 @@
+.mui-content{
+}
+.reason-text{
+	color: #9a9a9a;
+	padding: 5px;
+	line-height: 30px;
+	text-align: center;
+}
+.record-ul li{
+	margin: 8px;
+	font-size: 14px;
+	float: left;
+}
+.record-ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.record-icon{
+	
+	position: relative;
+	color:#9a9a9a ;
+	margin-right: 10px;
+	padding: 5px 8px;
+	line-height: 14px;
+	border: 1px #9a9a9a solid;
+	border-radius:14px ;
+}
+.record-text{
+	margin-right: 15px;
+}
+.my-icon1{
+	border-radius: 50% ;
+	display: block;
+	bottom: 4px;
+	margin: 0px -3px 0px 5px;
+	width: 16px;
+	height: 16px;
+	background-size: 16px;
+	background-image: url(../images/record-2.png);
+	
+}
+.boxs-div{
+	margin:0px 10px 0px 10px;
+}
+.check-div{
+	color:#9a9a9a ;
+	margin:0px 10px 10px 0px;
+	padding: 5px 8px;
+	line-height: 14px;
+	border: 1px #9a9a9a solid;
+	border-radius:14px ;
+}
+.check-div input{
+	width: 0px;
+	visibility: hidden;
+}
+.check-div label{
+	font-size: 14px;
+	margin-left: 0px;
+}
+.checked{
+	border: 1px #FE9426 solid;
+	color: #FE9426;
+	
+}
+.checked .my-icon1{
+	background-image: url(../images/record-1.png);
+}

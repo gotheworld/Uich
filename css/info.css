@@ -1,0 +1,39 @@
+.info-tyep-icon{
+	height: 40px;
+	width: 50px;
+	
+	background-size: 30px;
+}
+.info-plan-icon{
+	background-image: url(../images/info-plan.png);
+}
+.info-schedule-icon{
+	background-image: url(../images/info-schedule-icon.png);
+}
+.info-system-icon{
+	background-image: url(../images/info-system-icon.png);
+}
+.mui-table-view-cell{
+	padding: 5px 0px;
+}
+.info-text-des{
+	font-size: 14px;
+	color:#9A9A9A;
+}
+.info-more-icon{
+	width: 25px;
+}
+.mui-badge{
+	margin-top: -1px;
+	right: 30px !important;
+}
+.plan-badge{
+	display: none;
+	background-color: #fe9426;
+}
+.schedule-badge{
+	background-color: #1cafb7;
+}
+.system-badge{
+	background-color: #33475f;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>上传面访资料</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/upload.css" />
+		<link rel="stylesheet" type="text/css" href="css/prew.css" />
+		
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=qsG2L99gX1IX7gHeCSiFfZyv"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="" class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<a id="info" class="mui-btn-link mui-pull-right myinfo"></a>
+			<h1 class="mui-title">上传面访图片</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="my-content margin10" style="padding-bottom: 10px;">
+				<div class="u-type-text"><!--类型--></div>
+				<div class="u-type relative">
+					<span class="u-imgtype-btn-f u-typebtn2">
+						<span id="imgType-1" class="u-imgtype-btn"><!--场所名称--></span>
+					</span>
+				</div>
+				<div class="picture-div jjcs-div">
+					<ul class="pic-ul clear imgA">
+						<!--<li><img src="images/3.png" data-preview-src="" data-preview-group="1" /></li>
+						<li><img src="images/3.png" data-preview-src="" data-preview-group="1" /></li>-->
+						
+						<li class="more">
+							<button class="btn-width more-btn mainBg"></button>
+						</li>
+					</ul>
+				</div>
+				<div class='picture-div home-div' style="display: none;">
+					<ul class="pic-ul clear imgA"> 
+						<li class="more">
+							<button class="btn-width more-btn mainBg"></button>
+						</li>
+					</ul>
+				</div>
+				<div class="u-type relative">
+					<span class="u-imgtype-btn-f u-typebtn5">
+						<span id="imgType-2" class="u-imgtype-btn">抵押物(可选)</span>
+					</span>
+				</div>
+				<div id="more" class="picture-div">
+					<ul class="pic-ul clear imgB">
+						<li class="more">
+							<button id="more-first-btn" class="btn-width more-btn mainBg"></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="notice">提示：上传前，长按图片可选择删除。</div>
+			<div class="margin10" style="font-size: 14px;">
+				<textarea id="remark" style="margin-bottom: 0px;font-size: 14px;" name="" rows="" cols="" placeholder="备注"></textarea>
+			</div>
+			<div style="padding: 5px">
+				<button type="button" id='upload-btn' class="mui-btn mui-btn-block my-btn-default my-btn-color1">上传</button>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.zoom.js"></script>
+		<script src="js/mui.previewimage.js"></script>
+		<script>
+			mui.previewImage();
+			mui.init({
+				gestureConfig: {
+					tap: true, //默认为true
+					doubletap: true, //默认为false
+					longtap: true, //默认为false
+					swipe: true, //默认为true
+					drag: true, //默认为true
+					hold: false, //默认为false，不监听
+					release: false //默认为false，不监听
+				}
+			});
+		</script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

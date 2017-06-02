@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>添加日程</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/appointment.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<style type="text/css">
+			html,
+			body,
+			.mui-content {
+				height: 0px;
+				margin: 0px;
+				background-color: #efeff4;
+			}
+			h5.mui-content-padded {
+				margin-left: 3px;
+				margin-top: 20px !important;
+			}
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			.mui-btn {
+				font-size: 16px;
+				margin: 3px;
+			}
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="" class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<a id="info" class="mui-btn-link mui-pull-right myinfo"></a>
+			<h1 class="mui-title">添加日程</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="my-content margin10">
+				<div class="a-name my-hr pading8px"><!--公司名称或者个人贷款-->成都XXX有限公司</div>
+				<div class="a-user-div my-hr pading8px">
+					<span class="d-head d-span mainBg mui-pull-left"></span>
+					<span class="d-span a-span a-text mui-pull-left">
+						<span class="a-span1"><!--贷款人姓名--></span>
+					</span>
+					<span class="d-call d-span mainBg mui-pull-right">
+						<span id="tel" class="a-call" name=""></span>
+					</span>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div id="selectAllTime" class="a-name my-hr a-text pading8px">
+					<div class="a-time-text  mui-pull-left">时间</div>
+					<div class="select-icon a-select mainBg mui-pull-right"></div>
+					<div id="allTime" class="a-time-text mui-pull-right" >请选择</div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div id="selectEarlyTime" class="a-name my-hr a-text pading8px">
+					<div class="a-time-text  mui-pull-left">提醒</div>
+					<div class="select-icon a-select mainBg mui-pull-right"></div>
+					<div id="EarlyTime" class="a-time-text mui-pull-right">请选择</div>
+					<div class="mui-clearfix"></div> 
+				</div>
+				<div class="mui-input-row">
+					<textarea id="textarea" rows="1" placeholder="备注(地点、特殊安排等)" class="a-textarea" style="font-size: 14px;"></textarea>
+				</div>
+			</div>
+			<div class="notes a-text">添加提醒事件后，系统将在设定时间内提醒您，以免耽误预约面访，可以在日程表中查看。
+			</div>
+			<div style="padding: 5px">
+				<button type="button" id='appoint-btn' class="mui-btn mui-btn-block my-btn-default my-btn-color1" >添加到日程表</button>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/appointment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/push.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

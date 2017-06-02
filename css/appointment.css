@@ -1,0 +1,26 @@
+.a-name{
+	line-height: 30px;
+}
+.a-user-div{
+	line-height: 50px;
+}
+.a-text{
+	color: #9A9A9A;
+}
+.a-span{
+	padding: 0px 8px;
+}
+.a-select{
+	height: 30px;
+}
+.a-textarea{
+	border: 0px;
+	padding: 8px;
+}
+.notes{
+	padding: 5px 8px;
+	font-size: 14px;
+}
+.set-swith{
+	display: none;
+}

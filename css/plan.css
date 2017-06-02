@@ -1,0 +1,39 @@
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #fff;
+	background-color: #FF7407;
+}
+.c-li-div{
+	line-height: 30px;
+}
+.mui-table-view-cell{
+	padding: 8px;
+}
+.head-man{
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+	background-image: url(../images/man.png);
+}
+.head-woman{
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+	background-image: url(../images/woman.png);
+}
+.c-name{
+	padding: 0px 8px;
+}
+.c-select{
+	height: 30px;
+	background-size: 20px;
+}
+.c-text{
+	color: #9A9A9A;
+}
+.mui-scroll{
+	min-height: 500px;
+} 
+.null-div{
+	background-color:#EFEFF4;
+	margin-top: 112px;
+}

@@ -1,0 +1,83 @@
+.p-head-div{
+	margin: 10px auto;
+}
+
+.p-content-div{
+	line-height: 45px;
+	background-color: #fff;
+	margin:0px 10px;
+}
+.p-pading{
+	padding: 0px 8px;
+}
+.p-icon{
+	height: 45px;
+	width: 25px;
+	background-size: 18px;
+}
+.name-icon{
+	background-image:url(../images/p-name.png) ;
+}
+.type-icon{
+	background-image:url(../images/type.png) ;
+	background-size: 20px;
+}
+.head-icon{
+	background-image:url(../images/p-head-1.png) ;
+}
+.more-icon{
+	background-image: url(../images/p-jiantou.png);
+}
+.password-icon{
+	background-image: url(../images/p-password.png);
+}
+.p-xx img{
+	width: 25px;
+}
+.p-xx div{
+	float: left;
+}
+.p-xx:after{
+	content: "clear";
+	height: 0px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.lv-icon{
+	background-image: url(../images/p-lv.png);
+}
+.net-icon{
+	background-image: url(../images/p-net.png);
+}
+.p-type{
+	padding: 0px 10px;
+}
+.p-text{
+	color: #9a9a9a;
+}
+.p-2{
+	background-position: center;
+	width: 25px;
+	height: 45px;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../images/p-xx2.png);
+}
+.p-1{
+	background-position: center;
+	width: 25px;
+	height: 45px;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../images/p-xx1.png);
+}
+.p-0{
+	background-position: center;
+	width: 25px;
+	height: 45px;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../images/p-xx0.png);
+}

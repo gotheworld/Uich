@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>融资单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/uichDetail.css" />
+		<link rel="stylesheet" type="text/css" href="css/prew.css" />
+		<link href="css/mui.picker.min.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="" class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<a id="menu" class="mui-action-menu mui-icon mui-pull-right home-icon menuList-icon" href="#menu-list" style="display: none;"></a>
+			<h1 class="mui-title">融资单详情</h1>
+		</header>
+
+		<div class="mui-content" style="padding-bottom:50px;">
+			<div class="my-content margin10">
+				<div class="pading8px my-hr">
+					<div class="con-l mui-pull-left my-name">
+						<!--贷款人-->
+					</div>
+					<div class="con-r mui-pull-right">
+						<div class="mymoney">
+							<!--贷款金额-->
+						</div>
+						<div class="myyt">
+							<!--贷款用途-->
+						</div>
+					</div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="pading8px my-hr" style="text-align: right;">
+					<span id="return-history-btn" data="" class="status-btn"></span>
+				</div>
+			</div>
+			<div class="my-content margin10">
+				<div class="pading8px my-hr">
+					<div class="text-title mui-pull-left">客户资料</div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="pading8px my-hr">
+					<span class="d-head d-span mainBg mui-pull-left"></span>
+					<span class="d-name d-text d-span mui-pull-left"></span>
+					<span class="d-call d-span mainBg mui-pull-right">
+					<!--贷款人联系方式-->
+					<a id="tel" class="a-call" href=""></a></span>
+					<span id="wechat" class="d-wechat d-span mainBg mui-pull-right"></span>
+					<span id="email" class="d-email d-span mainBg mui-pull-right"></span>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div id="click-more-btn" class="pading8px my-hr">
+					<span class="d-more-text mui-pull-left">查看更多</span>
+					<span class="d-more-icon-down mainBg mui-pull-right"></span>
+					<span class="d-more-icon-up mainBg mui-pull-right"></span>
+					<div class="mui-clearfix"></div>
+				</div>
+				<!--主题为个人  查看更多下拉框 start-->
+				<div class="personal-more">
+					<div class="pading8px my-hr">
+						<div class="d-more-div">
+							<div class="d-more-text"><span id="p-certificateType"><!--证件类型--></span>号:<span id="p-certificateCode" class="d-text"><!--身份证号--></span></div>
+							<div class="d-idcard">
+								<div class="idcard-l mui-pull-left">
+									<div id="p-frontImg">
+										<!--证件正面-->
+									</div>
+									<div class="idcard-text-l d-text d-more-text">正面</div>
+								</div>
+								<div class="idcard-r mui-pull-right">
+									<div id="p-contraryImg">
+										<!--证件反面-->
+									</div>
+									<div class="idcard-text-r d-text d-more-text">反面</div>
+								</div>
+								<div class="mui-clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--查看更多下拉框  end-->
+
+				<!--主题为企业  查看更多下拉框 start-->
+				<div class="company-more">
+					<div class="pading8px my-hr">
+						<span class="d-more-text mui-pull-left">法定代表人</span>
+						<span id="c-legalPerson" class="d-text mui-pull-right"><!--法定代表人--></span>
+						<div class="mui-clearfix"></div>
+					</div>
+					<div class="pading8px my-hr">
+						<div class="d-more-text"><span id="c-certificateType"><!--证件类型--></span>号:<span id="c-certificateCode" class="d-text"><!--证件号码--></span></div>
+						<div class="d-idcard">
+							<div class="idcard-l mui-pull-left">
+								<div id="c-frontImg"></div>
+								<div class="idcard-text-l d-text d-more-text">正面</div>
+							</div>
+							<div class="idcard-r mui-pull-right">
+								<div id="c-contraryImg"></div>
+								<div class="idcard-text-r d-text d-more-text">反面</div>
+							</div>
+							<div class="mui-clearfix"></div>
+						</div>
+					</div>
+					<div class="pading8px my-hr">
+						<div class="d-more-text">组织结构代码:<span id="c-enterpriseCode" class="d-text">1205</span></div>
+						<div class="d-idcard">
+							<div class="idcard-l mui-pull-left">
+								<div id="c-certificateCopy"></div>
+								<div class="idcard-text-l d-text d-more-text">正面</div>
+							</div>
+							<!--<div class="idcard-r mui-pull-right">
+								<div><img src="images/head.png" data-preview-src="" data-preview-group="2" /></div>
+								<div class="idcard-text-r d-text d-more-text">反面</div>
+							</div>-->
+							<div class="mui-clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!--查看更多下拉框  end-->
+			</div>
+			<div class="my-content margin10">
+				<div class="pading8px my-hr">
+					<div class="text-title mui-pull-left">贷款期限</div>
+					<div class="text-title mui-pull-right"><span id="loanYear" class="year"><!--贷款期限--></span><span class="year-text"></span></div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="pading8px my-hr">
+					<div class="text-title mui-pull-left year-text">发布于<span class="time-text"><!--贷款时间--></span></div>
+					<div class="mui-clearfix"></div>
+				</div>
+			</div>
+			<div id="reason_list_div">
+				<!--<div class="my-content margin10">
+					<div class="pading8px my-hr">
+						<div class="text-title">转介记录<span class="mui-pull-right"></span></div>
+						<div class="mui-clearfix"></div>
+					</div>
+					<div class="my-hr">
+						<ul class="record-ul">
+							<li class="record-icon"><span class="mui-pull-left">信用不够</span></li>
+							<li class="record-icon"><span class="mui-pull-left record-text">信用不够</span><i class="my-icon mui-pull-right"></i></li>
+							<div class="mui-clearfix"></div>
+						</ul>
+					</div>
+					<div class="pading8px my-hr year-text other-reason">
+						正在加载...
+					</div>
+				</div>-->
+			</div>
+			<div id="file" class="my-content margin10" style="display: block;margin-bottom: 75px;">
+				<div class="pading8px my-hr">
+					<div class="text-title">发送文档列表<span class="mui-pull-right"><span id="sendEmailTime"></span></span></div>
+					<div class="text-title mui-pull-right"><span id="loanYear" class="year"></span><span class="year-text"></span></div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="my-hr">
+					<ul class="s-word-ul">
+						<!--<li class='my-hr'>Uich融资平台-软件设计需求规格说明书.doc</li>-->
+					</ul>
+				</div>
+			</div>
+			<!--右上角弹出菜单-->
+			<div id="menu-list" class="mui-popover">
+				<div class="mui-popover-arrow"></div>
+				<div class="my-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul id="d-menuList" class="mui-table-view">
+							<!--<li id="menu-appointment" class="mui-table-view-cell">
+							<a>预约面访</a>
+						</li>
+						<li id="menu-refer" class="mui-table-view-cell">
+							<a>转介此单</a>
+						</li>
+						<li id="menu-close" class="mui-table-view-cell">
+							<a>关闭此单</a>
+						</li>
+						<li id="menu-status" class="mui-table-view-cell">
+							<a>改变状态</a>
+						</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="closeReason_div" style="text-align: center;display: none;">
+				<p><span id="close-time"></span>您关闭了该融资单</p>
+				<p>关闭原因：<span id="close-reason"></span> </p>
+			</div>
+			<div id="next" style="position: fixed;bottom: 0px;left: 5px;right: 5px;background-color: #EFEFF4;">
+				<button id='next-btn' data='' class="mui-btn mui-btn-block my-btn-default my-btn-color1" style="margin-bottom: 3px;"><!--按钮名称--></button>
+			</div>
+			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/mui.min.js"></script>
+			<script src="js/mui.picker.min.js"></script>
+			<script src="js/mui.poppicker.js"></script>
+			<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/uichDetail.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/immersed.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/mui.zoom.js"></script>
+			<script src="js/mui.previewimage.js"></script>
+			<script>
+				mui.previewImage();
+			</script>
+	</body>
+
+</html>

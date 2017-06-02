@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>发送文档</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/send.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="" class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<h1 class="mui-title">发送资料</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="my-content margin10">
+				<div class="type-line s-pading">
+					<div class="s-type mui-pull-left">产品类型</div>
+					<div class="s-type-text mui-pull-right typeName"><!--类型--></div>
+					<div class="mui-clearfix"></div>
+				</div>
+			</div>
+			<div class="my-content margin10">
+				<div class="s-word-title my-hr">资料文档</div>
+				<ul class="s-word-ul">
+					<!--<div style="padding: 10px 10px;">无</div>-->
+					<!--<li class="my-hr">《基本资料申请单》</li>
+					<li class="my-hr">《收入证明》</li>
+					<li class="my-hr">《办理贷款须知》</li>
+					<li class="my-hr">《资料清单》</li>-->
+				</ul>
+			</div>
+			<div id="send-btn-div" style="padding: 5px;display: none;">
+				<button id='send-btn' type="button" class="mui-btn mui-btn-block my-btn-default my-btn-color1">发送到邮箱</button>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/send.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

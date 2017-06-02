@@ -1,0 +1,900 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "mui_template_login",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "uich",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Push": {
+			"description": "管理推送消息插件"
+		},
+
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		
+		"Invocation": {},
+		"UI": {},
+		"Runtime": {},"Zip":{},"Maps":{},"File":{},"Audio":{},"Speech":{},"Device":{},"Camera":{},"Storage":{},"Gallery":{},"Webview":{},"Barcode":{},"Uploader":{},"NativeUI":{},"Contacts":{},"Navigator":{},"Messaging":{},"Proximity":{},"NativeObj":{},"Downloader":{},"Orientation":{},"Geolocation":{},"Accelerometer":{},"XMLHttpRequest":{},"Push":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": false,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {"plugins":{"maps":{"baidu":{"appkey_ios":"6hWCBVSWvnkah3aqzUBRCYgNiLEDRWob","appkey_android":"6hWCBVSWvnkah3aqzUBRCYgNiLEDRWob","appkey":"","description":""}},"push":{"igexin":{"appid":"moAO30jg9s6sxJGaUca9y","appkey":"8SbHNCrybt8stubWQnRwh6","appsecret":"GtzOuOGVk168LwVRZuTbx9"}}},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"hardwareAccelerated": true, //硬件加速开启 by 郑银华
+				"ImmersedStatusbar":false,//沉浸式状态栏开启
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.GET_TASKS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+			},
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"setting.html": {
+				"href": "setting.html",
+				"resources": [
+					"js/mui.min.js",
+					"js/mui.view.js",
+					"libs/easymob-webim-sdk/jquery-1.11.1.js",
+					"libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+					"libs/easymob-webim-sdk/json2.js",
+					"libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+					"js/feedback.js",
+					"js/feedback-page.js",
+					"js/mui.locker.js",
+					"js/app.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/feedback-page.css",
+					"images/iconfont-tianjia.png"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 1
+			},
+			"main.html": {
+				"href": "main.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"refer": [
+					"setting.html"
+				],
+				"priority": 1
+			},
+			"unlock.html": {
+				"href": "unlock.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"js/mui.locker.js",
+					"js/app.js"
+				],
+				"refer": [
+					"login.html",
+					"main.html"
+				],
+				"priority": 0
+			},
+			"forget_password.html": {
+				"href": "forget_password.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"priority": 1
+			},
+			"reg.html": {
+				"href": "reg.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 3
+			},
+			"login.html": {
+				"href": "login.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/mui.enterfocus.js",
+					"js/app.js",
+					"images/qihoo.png",
+					"images/qq.png",
+					"images/sinaweibo.png",
+					"images/weixin.png",
+					"css/login.css",
+					"css/mui.css",
+					"images/login-01.png",
+					"images/login-02.png",
+					"js/login.js",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"js/jquery-1.11.0.js"
+				],
+				"refer": [
+					"unlock.html",
+					"forget_password.html",
+					"main.html",
+					"reg.html",
+					"myUich.html",
+					"index.html"
+				],
+				"priority": 0
+			},
+			"myUich.html": {
+				"resources": [
+					"css/myUich.css",
+					"images/info.png",
+					"css/main.css",
+					"css/mui.min.css",
+					"images/home.png",
+					"images/xx.png",
+					"js/mui.min.js",
+					"images/list-head.png",
+					"images/more.png",
+					"images/time-icon.png",
+					"fonts/mui.ttf",
+					"js/jquery-1.11.0.js",
+					"images/qiang.png",
+					"images/mylike.png",
+					"images/plan.png",
+					"js/main.js",
+					"js/myUich.js",
+					"images/mine-active.png",
+					"images/rush-icon.png",
+					"images/mine-icon-active.png",
+					"images/plan-icon.png",
+					"js/jquery.md5.js",
+					"js/mui.pullToRefresh.js",
+					"js/mui.pullToRefresh.material.js",
+					"images/null-icon.png",
+					"js/push.js",
+					"images/info2.png"
+				],
+				"refer": [
+					"rush.html",
+					"uichDetail.html",
+					"index.html",
+					"plan.html",
+					"info.html"
+				],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"css/index.css",
+					"images/scrollhead.png",
+					"images/t2.png",
+					"images/t1.png",
+					"images/info.png",
+					"css/main.css",
+					"fonts/mui.ttf",
+					"images/t4.png",
+					"images/t3.png",
+					"images/xx.png",
+					"images/head.png",
+					"css/mui.css",
+					"js/mui.min.js",
+					"js/index.js",
+					"images/x1.png",
+					"images/x2.png",
+					"images/x1.5.png",
+					"images/xxa.png",
+					"images/p-xx0.png",
+					"images/p-xx2.png",
+					"images/info2.png",
+					"images/index-t1.png",
+					"images/index-t2.png",
+					"images/index-t3.png",
+					"images/index-t4.png",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"js/jquery-1.11.0.js",
+					"images/p-xx1.png",
+					"css/mui.min.css",
+					"js/login.js",
+					"js/push.js"
+				],
+				"refer": [
+					"myUich.html",
+					"rush.html",
+					"personal.html",
+					"plan.html",
+					"login.html",
+					"info.html",
+					"newUich.html"
+				],
+				"priority": 0
+			},
+			"rush.html": {
+				"resources": [
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"images/mylike.png",
+					"css/mui.min.css",
+					"images/qiang.png",
+					"images/home.png",
+					"images/plan.png",
+					"rushBody.html",
+					"fonts/mui.ttf",
+					"js/main.js",
+					"js/rush.js",
+					"images/rush-active.png",
+					"images/rush-icon-active.png",
+					"images/mine-icon.png",
+					"images/plan-icon.png",
+					"js/push.js",
+					"js/jquery-1.11.0.js",
+					"images/info2.png"
+				],
+				"refer": [
+					"myUich.html",
+					"index.html",
+					"plan.html",
+					"info.html"
+				],
+				"priority": 0
+			},
+			"rushBody.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"images/l-time.png",
+					"rushBody.css",
+					"css/rushBody.css",
+					"images/more.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/main.js",
+					"js/rushBody.js",
+					"js/jquery.md5.js",
+					"js/jquery-1.11.0.js",
+					"images/null-icon.png",
+					"js/common.js",
+					"images/zhuanjie.png",
+					"images/refer.png"
+				],
+				"refer": [
+					"rushDetail.html"
+				],
+				"priority": 0
+			},
+			"rushDetail.html": {
+				"resources": [
+					"js/main.js",
+					"css/rushDetail.css",
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/record-2.png",
+					"js/rushDetail.js",
+					"js/jquery.md5.js",
+					"js/jquery-1.11.0.js",
+					"js/common.js"
+				],
+				"refer": [
+					"myUich.html",
+					"personal.html"
+				],
+				"priority": 0
+			},
+			"refer.html": {
+				"resources": [
+					"js/main.js",
+					"images/record-2.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/refer.css",
+					"css/mui.min.css",
+					"images/record-1.png",
+					"js/refer.js",
+					"js/jquery.md5.js"
+				],
+				"refer": [
+					"myUich.html"
+				],
+				"priority": 0
+			},
+			"close.html": {
+				"resources": [
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/refer.css",
+					"css/mui.min.css",
+					"js/close.js",
+					"js/jquery.md5.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"uichDetail.html": {
+				"resources": [
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/menuList.png",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/d-call.png",
+					"css/uichDetail.css",
+					"images/d-wechat.png",
+					"images/d-head.png",
+					"images/down-icon.png",
+					"images/record-2.png",
+					"images/head.png",
+					"js/uichDetail.js",
+					"js/common.js",
+					"js/immersed.js",
+					"js/mui.zoom.js",
+					"css/prew.css",
+					"js/mui.previewimage.js",
+					"/images/up-icon.png",
+					"/images/down-icon.png",
+					"images/up-icon.png",
+					"js/jquery.md5.js",
+					"js/mui.picker.min.js",
+					"js/mui.poppicker.js",
+					"css/mui.picker.min.css",
+					"css/mui.poppicker.css",
+					"images/circle.png",
+					"js/ZeroClipboard.min.js",
+					"images/d-email.png",
+					"images/d-wechat1.png",
+					"images/d-phone.png"
+				],
+				"refer": [
+					"refer.html",
+					"close.html",
+					"send.html",
+					"appointment.html",
+					"upload.html",
+					"sendFirst.html",
+					"sendSecond.html",
+					"pushForm.html"
+				],
+				"priority": 0
+			},
+			"personal.html": {
+				"resources": [
+					"images/p-xx0.png",
+					"images/p-head-1.png",
+					"images/p-password.png",
+					"images/p-lv.png",
+					"js/jquery-1.11.0.js",
+					"css/personal.css",
+					"images/p-name.png",
+					"css/mui.min.css",
+					"images/p-head.png",
+					"images/home.png",
+					"images/p-jiantou.png",
+					"js/main.js",
+					"css/main.css",
+					"images/xxa.png",
+					"images/info.png",
+					"js/mui.min.js",
+					"images/p-xx2.png",
+					"images/p-xxx.png",
+					"images/p-net.png",
+					"images/head.png",
+					"images/p-xx1.png",
+					"js/personal.js",
+					"js/jquery.md5.js",
+					"js/immersed.js",
+					"js/common.js",
+					"js/push.js",
+					"images/info2.png",
+					"images/type.png"
+				],
+				"refer": [
+					"index.html",
+					"info.html",
+					"updatePassword.html"
+				],
+				"priority": 0
+			},
+			"send.html": {
+				"resources": [
+					"js/send.js",
+					"css/send.css",
+					"images/p-jiantou.png",
+					"js/main.js",
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/circle.png",
+					"js/jquery.md5.js"
+				],
+				"refer": [
+					"info.html"
+				],
+				"priority": 0
+			},
+			"appointment.html": {
+				"resources": [
+					"images/d-call.png",
+					"js/main.js",
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/appointment.css",
+					"images/back-icon.png",
+					"js/appointment.js",
+					"css/mui.min.css",
+					"images/p-jiantou.png",
+					"images/d-head.png",
+					"js/mui.picker.min.js",
+					"js/jquery.md5.js",
+					"css/mui.picker.min.css",
+					"js/push.js",
+					"images/d-phone.png"
+				],
+				"refer": [
+					"plan.html",
+					"info.html"
+				],
+				"priority": 0
+			},
+			"upload.html": {
+				"resources": [
+					"js/main.js",
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/more-btn.png",
+					"js/upload.js",
+					"css/upload.css",
+					"images/head.png",
+					"js/mui.zoom.js",
+					"js/mui.previewimage.js",
+					"images/3.png",
+					"css/prew.css",
+					"js/jquery.md5.js",
+					"js/push.js"
+				],
+				"refer": [
+					"info.html"
+				],
+				"priority": 0
+			},
+			"uichDetail2.html": {
+				"resources": [
+					"images/d-call.png",
+					"images/record-2.png",
+					"css/main.css",
+					"images/menuList.png",
+					"images/back-icon.png",
+					"images/d-wechat.png",
+					"js/immersed.js",
+					"images/d-head.png",
+					"js/uichDetail.js",
+					"js/common.js",
+					"js/mui.zoom.js",
+					"css/prew.css",
+					"js/jquery-1.11.0.js",
+					"js/mui.min.js",
+					"css/uichDetail.css",
+					"css/mui.min.css",
+					"images/down-icon.png",
+					"js/mui.previewimage.js",
+					"images/head.png"
+				],
+				"refer": [
+					"upload.html"
+				],
+				"priority": 0
+			},
+			"calendar.html": {
+				"resources": [
+					"js/main.js",
+					"css/main.css",
+					"images/mylike.png",
+					"images/plan.png",
+					"images/p-jiantou.png",
+					"images/scrollhead.png",
+					"images/info.png",
+					"js/jquery-1.11.0.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"images/home.png",
+					"images/qiang.png",
+					"js/calendar.js",
+					"css/calendar.css"
+				],
+				"refer": [
+					"rush.html"
+				],
+				"priority": 0
+			},
+			"plan.html": {
+				"resources": [
+					"js/main.js",
+					"css/plan.css",
+					"js/jquery-1.11.0.js",
+					"images/mylike.png",
+					"css/mui.min.css",
+					"images/qiang.png",
+					"images/home.png",
+					"images/plan.png",
+					"js/plan.js",
+					"images/p-jiantou.png",
+					"images/scrollhead.png",
+					"images/info.png",
+					"css/main.css",
+					"js/mui.min.js",
+					"images/man.png",
+					"images/woman.png",
+					"images/plan-active.png",
+					"images/rush-icon.png",
+					"images/plan-icon-active.png",
+					"images/mine-icon.png",
+					"js/mui.pullToRefresh.js",
+					"js/mui.pullToRefresh.material.js",
+					"js/jquery.md5.js",
+					"images/null-icon.png",
+					"js/push.js",
+					"images/info2.png"
+				],
+				"refer": [
+					"rush.html",
+					"myUich.html",
+					"planDetail.html",
+					"index.html",
+					"info.html"
+				],
+				"priority": 0
+			},
+			"planDetail.html": {
+				"resources": [
+					"images/d-call.png",
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/appointment.css",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/p-jiantou.png",
+					"images/d-head.png",
+					"js/planDetail.js",
+					"images/set.png",
+					"images/delete.png",
+					"images/del.png",
+					"js/mui.picker.min.js",
+					"css/mui.picker.min.css",
+					"js/jquery.md5.js",
+					"images/d-phone.png"
+				],
+				"refer": [
+					"plan.html"
+				],
+				"priority": 0
+			},
+			"info.html": {
+				"resources": [
+					"images/info-schedule-icon.png",
+					"css/info.css",
+					"images/info-plan.png",
+					"images/back-icon.png",
+					"js/info.js",
+					"images/info-system-icon.png",
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/mui.min.css",
+					"images/p-jiantou.png"
+				],
+				"refer": [
+					"infoDetail.html"
+				],
+				"priority": 0
+			},
+			"sendFirst.html": {
+				"resources": [
+					"js/main.js",
+					"js/sendFirst.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/send.css",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/p-jiantou.png"
+				],
+				"refer": [
+					"sendSecond.html"
+				],
+				"priority": 0
+			},
+			"sendSecond.html": {
+				"resources": [
+					"js/sendSecond.js",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/send.css",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/p-jiantou.png"
+				],
+				"refer": [
+					"send.html",
+					"sendThird.html"
+				],
+				"priority": 0
+			},
+			"updatePassword.html": {
+				"resources": [
+					"images/back-icon.png",
+					"js/updatePassword.js",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"sendThird.html": {
+				"resources": [
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/send.css",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"js/sendThird.js"
+				],
+				"refer": [
+					"send.html"
+				],
+				"priority": 0
+			},
+			"infoDetail.html": {
+				"resources": [
+					"js/infoDetail.js",
+					"css/infoDetail.css",
+					"images/info-time.png",
+					"images/beizhu.png",
+					"images/d-head.png",
+					"js/jquery.md5.js",
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"images/null-icon.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"newUich.html": {
+				"resources": [
+					"images/close.png",
+					"css/newUich.css",
+					"css/mui.min.css",
+					"images/new-icon.png",
+					"images/p-jiantou.png",
+					"js/newUich.js",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/close1.png",
+					"images/close-1.png",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"rushNewDetail.html",
+					"myUich.html"
+				],
+				"priority": 0
+			},
+			"rushNewDetail.html": {
+				"resources": [
+					"js/common.js",
+					"css/rushDetail.css",
+					"js/rushNewDetail.js",
+					"images/back-icon.png",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"css/mui.min.css",
+					"images/record-2.png"
+				],
+				"refer": [
+					"myUich.html"
+				],
+				"priority": 0
+			},
+			"pushForm.html": {
+				"resources": [
+					"js/pushForm.js",
+					"css/pushForm.css",
+					"js/main.js",
+					"js/jquery.md5.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/jquery-1.11.0.js",
+					"images/back-icon.png",
+					"css/mui.min.css",
+					"js/mui.picker.min.js",
+					"js/mui.poppicker.js",
+					"css/mui.poppicker.css",
+					"css/mui.picker.min.css",
+					"images/p-jiantou.png"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/service.js",
+				"libs/easymob-webim-sdk/quickstart.md",
+				"images/user-photo.png",
+				"README.md"
+			]
+		}
+	},
+	"unpackage":[
+	  "README.md",
+	  "libs/easymob-webim-sdk/quickstart.md"
+	]
+}

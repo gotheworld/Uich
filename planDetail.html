@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>查看事项</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/appointment.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+	</head>
+
+	<body>
+		<div class="ImmersedTop"></div>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-pull-left home-icon back-icon"></a>
+			<a id="set-btn" class="mui-btn-link mui-pull-right myinfo set-icon"></a>
+			<h1 class="mui-title">日程详细</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="my-content margin10">
+				<div class="my-hr pading8px">
+					<div class="a-name"><!----></div>
+				</div>
+				<div class="a-user-div my-hr pading8px">
+					<span class="d-head d-span mainBg mui-pull-left"></span>
+					<span class="d-span a-span a-text mui-pull-left">
+						<span class="a-span1">王刚</span>
+					</span>
+					<span class="d-call d-span mainBg mui-pull-right">
+						<span id="tel" class="a-call" name=""></span>
+					</span>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div id="set1" class="set1 a-name my-hr a-text pading8px">
+					<div class="a-time-text  mui-pull-left">时间</div>
+					<div class="set-swith select-icon a-select mainBg mui-pull-right"></div>
+					<div id="allTime" class="a-time-text mui-pull-right"></div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div id="set2" class="set2 a-name my-hr a-text pading8px">
+					<div class="a-time-text  mui-pull-left">提醒</div>
+					<div class="set-swith select-icon a-select mainBg mui-pull-right"></div>
+					<div id="EarlyTime" class="a-time-text mui-pull-right"></div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="mui-input-row">
+					<textarea id="textarea" rows="1" placeholder="备注" readonly="readonly" class="a-textarea" style="font-size: 14px;color: #9A9A9A;"></textarea>
+				</div>
+			</div>
+			</div>
+			<div style="padding: 5px">
+				<button id='save-btn' class="set-swith mui-btn mui-btn-block my-btn-default my-btn-color1" >保存</button>
+			</div>
+			<div class="relative" style="padding: 5px">
+				<span id='delete-btn' class="set-swith delete-btn"></span>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/planDetail.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

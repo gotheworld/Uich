@@ -1,0 +1,98 @@
+/*
+ * 2016-4-25 by zhengyinhua
+ * 
+ */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #1cafb7;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+.mui-content{
+	height: 100%;
+	background-color: #1cafb7;
+}
+.login-color-bg{
+	color: #fff;
+	background-color: #1cafb7;
+}
+.margintop{
+	margin-top: 150px
+}
+.head{
+	text-align: center;
+	line-height: 30px;
+}
+.username-div{
+	
+}
+.icon{
+	display: block;
+	width: 30px;
+	height: 40px;
+	background-position:15px ;
+	background-repeat: no-repeat;
+	background-size:20px
+}
+.username-icon{
+	background-image: url(../images/login-01.png);
+}
+.paw-icon{
+	background-image: url(../images/login-02.png);
+}
+.mui-input-group:before{
+	background-color: rgba(255, 255, 255, 0);
+}
+.mui-input-group:after{
+	background-color: rgba(255, 255, 255, 0);
+}
+.mui-input-group .mui-input-row:after{
+	background-color: rgba(255, 255, 255, 0);
+}
+.username-div{
+	box-shadow: 1px 1px 1px #1ca6ad;
+}
+.paw-div{
+	margin-top: 1px;
+	box-shadow: 1px 1px 1px #1ca6ad;
+}
+.border{
+	border-bottom: 1px #1ca6ad solid;
+}
+.mui-table-view:before{
+	background-color: rgba(255, 255, 255, 0);
+}
+.mui-table-view:after{
+	background-color: rgba(255, 255, 255, 0);
+}
+.mui-input-row label{
+	width: 15%;
+	min-width: 35px;
+}
+.mui-input-row label ~ input{
+	width: 85%;
+}
+.mui-switch.mui-active {
+    border-color: #066166;
+    background-color: #066166;
+}
+.mui-switch{
+	background-clip: none;
+} 
+.mui-btn-primary{
+	border: 1px solid #066166;
+	background-color:#066166 ;
+}
+.mui-btn-block{
+	padding: 13px;
+}
+.forget-a{
+	color: #fff;
+	font-size: 16px;
+}
+.mui-table-view-cell.mui-active{
+	background-color: #1cafb7 !important;
+}

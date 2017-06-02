@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>日程表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/plan.css" />
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				margin: 0;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			
+			.mui-pull-bottom-tips {
+				display: none;
+				/*这里把下拉加载div隐藏 不让它显示*/
+				text-align: center;
+				background-color: red;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a id="home" class="mui-icon mui-pull-left home-icon"></a>
+			<a id="info" class="mui-btn-link mui-pull-right myinfo"></a>
+			<h1 class="mui-title">我的日程表</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab mynav-bottom">
+			<a id="btn-rush" class="mui-tab-item">
+				<span class="mui-icon my-icon-qiang"></span>
+				<span class="mui-tab-label">抢单</span>
+			</a>
+			<a id="btn-mine" class="mui-tab-item">
+				<span class="mui-icon my-icon-mine"></span>
+				<span class="mui-tab-label">我的uich单</span>
+			</a>
+			<a id="" class="mui-tab-item my-nav-active">
+				<span class="mui-icon my-icon-plan plan-active"></span>
+				<span class="mui-tab-label">日程表</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">待办事项</a>
+					<a class="mui-control-item" href="#item2mobile">历史</a></a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div id="mui-scroll1" class="mui-scroll">
+								<ul id="list_Unfinished" class="mui-table-view">
+									<!--<li id="detail-01" class="detail-01 mui-table-view-cell c-li">
+										<div class="c-li-div">
+											<div class="head-man mainBg mui-pull-left"></div>
+											<div class="c-name mui-pull-left">王小刚</div>
+											<div class="select-icon c-select mainBg mui-pull-right"></div>
+											<div class="c-text mui-pull-right">2015/06/09 14:30:00</div>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+							<div class="mui-clearfix"></div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div id="mui-scroll2" class="mui-scroll">
+								<ul id="list_done" class="mui-table-view">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.pullToRefresh.js"></script>
+		<script src="js/mui.pullToRefresh.material.js"></script>
+		<script src="js/plan.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/push.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var w_height = $(window).height();
+			var min_height = w_height - 132;
+			$(".mui-control-content").css("min-height", min_height + "px")
+		</script>
+	</body>
+
+</html>

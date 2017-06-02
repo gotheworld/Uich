@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/login.js"></script>
+		<script src="js/plupload.full.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			mui.init();
+			//--按两次返回键 退出应用
+			mui.oldBack = mui.back;
+			var backButtonPress = 0;
+			mui.back = function(event) {
+				backButtonPress++;
+				if (backButtonPress > 1) {
+					plus.runtime.quit();
+				} else {
+					plus.nativeUI.toast('再按一次退出应用');
+				}
+				setTimeout(function() {
+					backButtonPress = 0;
+				}, 1000);
+				return false;
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="head">登录uich</div>
+		<div class="mui-content margintop">
+			<div id='login-form' class="mui-input-group login-color-bg">
+				<div class="username-div login-color-bg border">
+					<div class="mui-input-row">
+						<label class="icon username-icon"></label>
+						<input id='username' type="text" class="mui-input"/ >
+					</div>
+				</div>
+				<div class="paw-div login-color-bg border">	
+					<div class="mui-input-row">
+						<label class="icon paw-icon"></label>
+						<input id='password' type="password" class="mui-input"/>
+					</div>
+				</div>
+			</div>
+			<form class="mui-input-group" style="margin-top: 1px;">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell login-color-bg" style="font-size: 16px;">
+						自动登录
+						<div id="autoLogin" class="mui-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<div class="mui-content-padded margintop">
+				<button id='login' type="button" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</div>
+			<!--<div style="width: 100%;text-align: center;">
+				<a href="javascript:;" class="forget-a">忘记密码</a>
+			</div>-->
+			<div class="mui-content-padded oauth-area">
+
+			</div>
+		</div>
+		
+	</body>
+
+</html>

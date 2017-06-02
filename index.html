@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>uich融资</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=qsG2L99gX1IX7gHeCSiFfZyv"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+		
+	</head>
+ 
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="myscroll-div">
+							<div class="myhead mainBg">
+							</div>
+							<div class="mytell">
+								<!--电话号码-->
+							</div>
+							<div style="text-align: center;margin-top: 30px;">
+								<button id="logout-btn" type="button" class="mui-btn mui-btn-block mui-btn-primary">注销</button>
+							</div>
+							<div class="exit" style="text-align: center;display: none;">
+								<button id="exit" type="button" class="mui-btn mui-btn-block mui-btn-primary">退出</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" style="color: #333;"></a>
+					<a id="info" class="mui-btn-link mui-pull-right myinfo"></a>
+					<h1 class="mui-title">uich融资</h1>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="my-div">
+							<div class="head-img">
+							</div>
+							<div class="username">
+								<!--姓名-->
+							</div> 
+							<div class="leval">
+								<!--等级--> 
+							</div>
+						</div>
+						<div class="mynav relative">
+							<div class="mynav1">
+								<div id="rush" class="t1 tem relative mui-pull-left">
+									<div class="title absolute">我要抢单</div>
+									<span id="info-Number" class="mui-badge mui-badge-danger plan-badge index-info"></span>
+								</div>
+								<div id="myuich" class="t2 tem relative mui-pull-right">
+									<div class="title absolute">我的uich单</div>
+								</div>
+								<div class="mui-clearfix"></div>
+							</div>
+							
+							<div class="mynav2">
+								<div id="plan" class="t3 tem relative mui-pull-left">
+									<div class="title absolute">日程表</div>
+								</div>
+								<div id="personal" class="t4 tem relative mui-pull-right">
+									<div class="title absolute">个人中心</div>
+								</div>
+								<div class="mui-clearfix"></div>
+							</div>
+							<div class="border-right absolute"></div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div> 
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=qsG2L99gX1IX7gHeCSiFfZyv"></script>
+    	<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init(); 
+			//侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			//主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			//菜单容器
+			var offCanvasSide = document.getElementById("offCanvasSide");
+			/*if (!mui.os.android) {
+				document.getElementById("move-togger").classList.remove('mui-hidden');
+				var spans = document.querySelectorAll('.android-only');
+				for (var i = 0, len = spans.length; i < len; i++) {
+					spans[i].style.display = "none";
+				}
+			}*/
+			//主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+			//实现ios平台原生侧滑关闭页面；
+			if (mui.os.plus && mui.os.ios) {
+				mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'none'
+					});
+				});
+			}
+			//--按两次返回键 退出应用
+			mui.oldBack = mui.back;
+			var backButtonPress = 0;
+			mui.back = function(event) {
+				backButtonPress++;
+				if (backButtonPress > 1) {
+					plus.runtime.quit();
+				} else {
+					plus.nativeUI.toast('再按一次退出应用');
+				}
+				setTimeout(function() {
+					backButtonPress = 0;
+				}, 1000);
+				return false;
+			};
+		</script>
+	</body>
+
+</html>

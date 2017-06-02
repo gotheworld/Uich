@@ -1,0 +1,124 @@
+.mui-table-view{
+	background-color:#EFEFF4;
+}
+.mui-content{
+	background-color:#EFEFF4;
+}
+.mui-content{
+	/*padding-top: 44px !important;*/
+} 
+.my-cell-li{
+	border-radius:2px ;
+	/*border: 1px #ddd solid;
+	margin: 5px;*/
+	margin-bottom: 3px;
+	padding: 0px;
+}
+.list-time-div{
+	padding: 5px 0px;
+	text-align: center;
+}
+.li-time-span{
+	border-radius: 4px;
+	padding: 2px 15px;
+	font-size: 13px;
+	background-color: #9A9A9A;
+	color:#fff;
+}
+.list-div{
+	background-color: #fff;
+}
+.list-1{
+	width: 60%;
+}
+.l-name{
+	line-height: 25px;
+}
+.list-2{
+	text-align: right;
+	font-size: 16px;
+	width: 28%;
+	height: 56px;
+}
+.list-3{
+	background-image: url(../images/more.png);
+	width:12%;
+	height: 56px;
+	background-size: 18px;
+}
+.l-yt{
+	border-radius:2px ;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+.l-year{
+	line-height: 25px;
+	font-weight: 700;
+}
+.time-icon{
+	display: block;
+	height: 25px;
+	width: 25px;
+	background-size: 25px;
+	background-position: center;
+	background-image: url(../images/l-time.png);
+	
+}
+.time-span{
+	line-height: 25px;
+	font-size: 14px;
+}
+.mymoney-rush{
+	font-size: 20px;
+	font-weight: 700;
+	color: #FF7407;
+	line-height: 30px;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+	padding-right:0px ;
+}
+.mui-table-view-cell.mui-active{
+	background-color: #fff !important;
+}
+.rush-btn{
+	border-radius:2px ;
+	width: 100px;
+	padding: 2px 5px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	background-color: #bb0102;
+}
+.list-div-down{
+	padding: 5px;
+	border-top: 1px #ddd solid ;
+}
+.pading5px{
+	padding: 5px;
+}
+.mui-table-view:before{
+	height: 0px;
+}
+.mui-table-view-cell:after{
+	height: 0px;
+}
+.l-head{
+	padding-top: 5px;
+}
+.waiting{
+	text-align: center;
+	padding-top: 50%;
+	font-size: 14px; 
+}
+.mui-table-view:after{
+	height: 0px;
+}
+.refer-i{
+	display: block;
+	height: 29px;
+	width: 30px;
+	background-image: url(../images/refer.png);
+	background-size: 29px;
+}

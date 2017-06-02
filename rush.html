@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a id="home" class="mui-icon mui-pull-left home-icon"></a>
+			<a id="info" class="mui-btn-link mui-pull-right myinfo"></a>
+			<h1 class="mui-title">我要抢单</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab mynav-bottom">
+			<a id="" class="mui-tab-item my-nav-active">
+				<span class="mui-icon my-icon-qiang rush-active"></span>
+				<span class="mui-tab-label">抢单</span>
+			</a>
+			<a id="btn-mine" class="mui-tab-item">
+				<span class="mui-icon my-icon-mine"></span>
+				<span class="mui-tab-label">我的uich单</span>
+			</a>
+			<a id="btn-plan" class="mui-tab-item">
+				<span class="mui-icon my-icon-plan"></span>
+				<span class="mui-tab-label">日程表</span>
+			</a>
+			
+		</nav>
+		<div class="mui-content">
+			<!--<div class="waiting">正在努力加载中...</div>-->
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//启用双击监听
+		mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{
+				url:'rushBody.html',
+				id:'rushBody',
+				styles:{
+					top: '45px',
+					bottom: '50px',
+				}
+			}]
+		});
+	
+		var contentWebview = null;
+		document.querySelector('header').addEventListener('doubletap',function () {
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+			}
+			contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+		});
+	</script>
+</html>

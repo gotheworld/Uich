@@ -1,0 +1,135 @@
+/*
+ * 2016-4-26 by zhengyinhua
+ * 
+ */
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #fff;
+	background-color: #FF7407;
+}
+.list-div-up div{
+	margin: 0 auto;	
+}
+.list-div-up:after{
+	content: "clear";
+	clear: both;
+	height: 0px;
+	display: block;
+	overflow: hidden;
+	visibility:hidden;
+}
+.mui-table-view-cell:after{
+	height: 0px;
+}
+.mui-table-view-cell{
+	margin-bottom: 3px;
+	border-radius:2px ;
+	/*border: 1px #e0dede solid;
+	margin: 5px;*/
+	padding: 0px;
+	background-color: #fff;
+}
+.list-1{
+	padding:5px;
+	width: 58%;
+}
+.list-2{
+	font-size: 16px;
+	width: 32%;
+	height: 56px;
+}
+.list-3{
+	background-image: url(../images/more.png);
+	width:10%;
+	height: 56px;
+	background-size: 18px;
+}
+.l-head {
+	padding: 0px 0px 0px 20px;
+	background-repeat:no-repeat ;
+	background-position:2px 2px;
+	background-size: 18px;
+	background-image:url(../images/list-head.png) ;
+}
+.l-name{
+	font-size: 16px;
+}
+.l-text{
+	color: #9a9a9a;
+	margin-left: 15px;
+	font-size: 14px;
+	line-height: 25px;
+}
+.mymoney{
+	text-align: center;
+	width: 100%;
+	font-weight: 700;
+	line-height: 25px;
+	color: #FF7407;
+	font-size: 18px;
+}
+.myyt{ 
+	width: 100%; 
+	text-align: center;
+	color: #9a9a9a;
+	line-height: 25px;
+	font-size: 14px;
+}
+.list-div-down{
+	padding: 5px;
+	border-top: 1px #e0dede solid ;
+}
+.list-div-down:after{
+	content: "clear";
+	clear: both;
+	height: 0px;
+	display: block;
+	overflow: hidden;
+	visibility:hidden;
+}
+.status-btn{
+	color: #fff;
+	padding: 0px 3px; 
+	line-height: 25px;
+	text-align: center;
+	background-color: #1cafb7;
+}
+.myyear{
+	line-height: 25px;
+	position: absolute;
+	left: 40%;
+	font-weight: 700;
+}
+.mytime{
+	line-height: 25px;
+}
+.time-icon{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background-size: 18px;
+	background-image: url(../images/time-icon.png);
+}
+.time-span{
+	padding-left:5px ;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-bottom: none;
+}
+.mui-control-content {		
+	background-color: #efeff4;
+}
+.mui-table-view{
+	background-color:#efeff4;
+}
+.mui-scroll{
+	min-height: 500PX;
+}
+  
+.load{
+	margin-top: 50%;
+	text-align: center;
+	font-size: 12px;
+}
+.null-div{
+	margin-top: 112px;
+}
